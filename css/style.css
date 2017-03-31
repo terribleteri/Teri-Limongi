@@ -1,0 +1,417 @@
+/* Import Google Web fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+body { /* sets the page defaults e.g. background and default typography */
+  background: #fff;
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.74);
+}
+/* a few tweaks here and there */
+h2 {
+  margin: 0;
+}
+
+figure {
+  margin: 0; /* resets the left margin in the figure*/
+}
+
+figure img {
+  max-width: 100%; /* images will shrink to fit inside the main conent column*/
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
+blockquote {
+  width: 66%;
+  margin: 1em auto;
+  background: #ddd;
+  padding: 1em;
+  font-size: 1.25em;
+  text-align: center;
+  color: #696969;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+/* Styling the full-page background headers */
+
+.image_bg, .color_bg {
+  height: 100vh; /* this sets the height of each full width image section to that of the viewport.*/
+  position: relative;
+  /*display: flex;  */
+  background-position: center !important;
+}
+
+/* the text inside the headers */
+header {
+  font-family: 'Merienda', cursive;
+  color: #FF8C00;
+  font-weight: 700;
+  text-shadow:0 0 9px #000000;
+  width: 75%;
+  text-align: center;
+/*   margin: auto;
+   */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+-o-transform: translateX(-50%) translateY(-50%);
+-ms-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+header h1 {
+  margin: 0;
+  font-size: 6vw;
+}
+
+header a {
+  color: white;
+}
+
+/* Styles for individual header sections by class name. */
+
+.title {
+  background: url(../images/alpacas.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* the background image doesn't move when scrolling*/
+}
+
+/* the above style gets copied for every new section header with background image. Each new copy has a new class name. */
+.paris {
+  background: url(../images/Paris2013.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.green_header { /* this sets the background colour of the coloured header. */
+  background: #AED581;
+}
+
+/* Content sections */
+.content {
+  margin: 0 auto;
+  padding: 1em 20%; /* this in-effect sets the content section's width e.g. 20% = 60% width. */
+}
+.llama {
+  position: relative;}
+
+.number1 {
+    position: absolute;
+    bottom: -380px;
+    right: 620px;
+}
+
+.number2 {
+  position: absolute;
+  bottom: -370px;
+  right:700px;
+}
+
+.number3 {
+  position: absolute;
+  bottom: -300px;
+  right: 600px;
+}
+ .number4 {
+   position: absolute;
+   bottom:-300px;
+   right:790px;
+ }
+
+ .number5 {
+   position: absolute;
+   bottom: -200px;
+   right: 810px;
+ }
+
+ .number6 {
+   position: absolute;
+   bottom: -280px;
+   right: 695px;
+
+ }
+
+.number7 {
+  position: absolute;
+  bottom:-380px;
+  left:620px;
+}
+
+.number8 {
+  position: absolute;
+  bottom: -370px;
+  left: 700px;
+}
+
+.number9 {
+  position: absolute;
+  bottom: -300px;
+  left: 600px;
+  }
+
+.number10 {
+  position: absolute;
+  bottom: -300px;
+  left: 790px;
+}
+
+.number11 {
+  position: absolute;
+  bottom: -200px;
+  left:810px;
+}
+
+.number12 {
+  position: absolute;
+  bottom: -280px;
+  left: 695px;
+}
+body {
+  margin:0;
+  padding:20px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #FF8C00;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+.intro {
+  background: #FF8C00;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #E6E6FA;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+.timeline ul li::after {
+  background: #fff;
+  transition: background 1s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.quiz {
+  padding:0 30px 20px 30px;
+  max-width:960px;
+  margin:0 auto;
+
+  ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+}
+.quiz-question {
+  font-weight:bold;
+  display:block;
+  padding:30px 0 10px 0;
+  margin:0;
+}
+.quiz-answer {
+  margin:0;
+  padding:10px;
+  background:#f7f7f7;
+  margin-bottom:5px;
+  cursor: pointer;
+
+  &:hover {
+    background:#eee;
+  }
+
+  &:before {
+    content:"";
+    display:inline-block;
+    width:15px;
+    height:15px;
+    border:1px solid #ccc;
+    background:#fff;
+    vertical-align:middle;
+    margin-right:10px;
+  }
+
+  &.active {
+    &:before {
+      background-color:#333;
+      border-color:#333;
+    }
+  }
+  &.correct {
+    &:before {
+      background-color:green;
+      border-color:green;
+    }
+  }
+  &.incorrect {
+    &:before {
+      background-color:red;
+      border-color:red;
+    }
+  }
+  &.active.correct {
+    &:before {
+      outline: 2px solid green;
+      outline-offset: 2px;
+    }
+  }
+}
+.quiz-result {
+  max-width:960px;
+  margin:0 auto;
+  font-weight:bold;
+  text-align:center;
+  color: #fff;
+  padding:20px;
+
+  &.good {
+    background: green;
+  }
+  &.mid {
+    background: orange;
+  }
+  &.bad {
+    background: red;
+  }
+}
+
+footer {
+  height: 100px;
+  background: #F45B69;
+  color: #eee;
+  text-align: center;
+  padding: 1em;
+}
+.fa {
+  color:#eee
+}
